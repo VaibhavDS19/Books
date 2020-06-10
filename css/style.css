@@ -1,52 +1,23 @@
-body{
+body {
     padding-top: 50px;
-    background-color: #ffffff;
-    color: #7fff00;
-}
-.em-tex{
-    color: yellow !important;
-    background-color: black !important;
-}
-.em-text{
-    color: #0713f2 !important;
-    background-color: #fcba03 !important;
-}
-.jumbotron{
-    color: #0713f2;
-}
-form{
-    width: 60px !important;
-    border-style: solid;
-    border-color: #c0c0c0;
-    background-color: #000000 !important;
-    color: #ffff00 !important;
-}
-.index{
-    background: url(../Images/BooLib.jpg)  top center !important;
-    height: 600px;
+  }
+  .em-text
+  {
+      color:#3498eb !important;
+  }
+  .jumbotron{
+      color: #000000;
+  }
+  .form{
+      border-style: solid;
+      border-color: black;
+      padding-right: 25px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      border-radius: 4px;
+  }
+  .index{
+    background: url(../Images/BooLib.jpg) no-repeat top center !important;
+    height: 598px;
     color: #ffffff;
-}
-.bg-img {
-    /* The image used */
-    background-image: url("../Images/BooLib.jpg");
-  
-    /* Control the height of the image */
-    min-height: 380px;
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
   }
-  
-  /* Add styles to the form container */
-  .container {
-    position: absolute;
-    right: 0;
-    margin: 20px;
-    max-width: 300px;
-    padding: 16px;
-    background-color: white;
-  }
-  
