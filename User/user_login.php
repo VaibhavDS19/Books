@@ -1,10 +1,10 @@
 <?php
  
-include("connect.php");
+include("../connect.php");
 session_start();
-if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true){
-     header("location:admin_main.php");
-     exit;
+if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"]==true){
+    header("location:../index.html");
+    exit;
 }
 $error = "";
 if($_SERVER["REQUEST_METHOD"]=='POST'){
@@ -16,10 +16,9 @@ if($_SERVER["REQUEST_METHOD"]=='POST'){
         $result = mysqli_query($link,$sql);
 
         if(mysqli_num_rows($result) > 0){
-
             session_start();
             $_SESSION["loggedin"]=true;
-                header("location:admin_main.php");
+            header("location:../index.html");
         }
         else{
             $error = "Username or Password incorrect.";
@@ -34,11 +33,11 @@ if($_SERVER["REQUEST_METHOD"]=='POST'){
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial_scale=1.0">
         <title>Login</title>
-        <link href="css/style.css" rel="stylesheet">
+        <link href="../css/style.css" rel="stylesheet">
     </head>
-    <body>
+    <body style="background-color:#000000">
     
-    <h1>Login</h1>
+    <h1 style="background-color: #ff0000">Login</h1>
 
     <div class = "form">
 
